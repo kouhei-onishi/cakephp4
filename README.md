@@ -1,7 +1,7 @@
 # CakePHP4 Docker環境構築
 
 ## ディレクトリ構成
-```plaintext
+```tree
 ├── docker
 │   ├── mysql
 │   │   ├── my.cnf  # MySQLの設定ファイル
@@ -11,6 +11,7 @@
 ├── .env
 ├── .gitignore
 └── docker-compose.yml
+```
 
 ## 手順
 1.コンテナの構築
@@ -27,6 +28,7 @@ $ cd ../
 $ composer create-project --prefer-dist cakephp/app:4.* html
 
 5.cakephpの初期設定
+```app_local.php
 config > app_local.phpの編集
 Datasources' => [
         'default' => [
@@ -42,7 +44,7 @@ Datasources' => [
             'password' => '.envに書いてあるパスワード',
 
             'database' => '.envに書いてあるDB DB名',
-
+```
 6.動作確認
 cakephp4 http://localhost:9811
 phpmyadmin http://localhost:9831
