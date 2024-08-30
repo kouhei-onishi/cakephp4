@@ -46,5 +46,5 @@ Datasources' => [
             'database' => '.envに書いてあるDB DB名',
 ```
 6.動作確認
-cakephp4 http://localhost:9811
-phpmyadmin http://localhost:9831
+ - cakephp4 http://localhost:9811
+ - phpmyadmin http://localhost:9831
