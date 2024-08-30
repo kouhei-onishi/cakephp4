@@ -1,14 +1,19 @@
+# CakePHP4 Docker環境構築
+
+## ディレクトリ構成
+```plaintext
 ├── docker
 │   ├── mysql
-│   │   └── my.cnf # MySQLの設定ファイル
-│   │   └── db     # データベース永続化用ディレクトリ
+│   │   ├── my.cnf  # MySQLの設定ファイル
+│   │   └── db      # データベース永続化用ディレクトリ
 │   └── php
 │       └── Dockerfile
 ├── .env
 ├── .gitignore
 └── docker-compose.yml
 
-[手順]
+
+## 手順
 1.コンテナの構築
 $ docker-compose up -d --build
 
