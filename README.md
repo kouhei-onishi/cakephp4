@@ -23,9 +23,9 @@ $ docker ps
 3.PHPコンテナに入りcakephp4のインストール
 (例)$ docker exec -it cakephp4-php-1 bash
 
-4.cakephpのインストール(結構時間がかかります)
-$ cd ../
-$ composer create-project --prefer-dist cakephp/app:4.* html
+4.cakephpのインストール(結構時間がかかります)  
+$ cd ../  
+$ composer create-project --prefer-dist cakephp/app:4.* html  
 
 5.cakephpの初期設定
 ```app_local.php
